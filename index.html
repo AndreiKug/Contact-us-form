@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- enctype="multipart/form-data" -->
+        <form action="/" id="form" method="post" class="decor"> 
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+                <h3>Написать нам</h3>
+                <input id="name" name="name" type="text" placeholder="Имя">
+                <input id="email" name="email" type="email" placeholder="Email">
+                <select id="tag" name="tag">
+                    <option name="optionTag1" value="NoTheme">Без темы</option>
+                    <option name="optionTag2" value="DisconnectNotOpen">Не запускается/вылет</option>
+                    <option name="optionTag3" value="Violate">Жалоба</option>
+                    <option name="optionTag4" value="Purchases">Покупки</option>
+                    <option name="optionTag5" value="Account">Аккаунт</option>
+                    <option name="optionTag6" value="Game">Вопрос по игре</option>
+                </select>
+                <textarea id="question" name="question" placeholder="Сообщение..." rows="3"></textarea>
+                <!-- <label id="label-file" for="upload">Загрузить файл</label> -->
+                <input id="upload" type="file" name="uploadFile" multiple accept="image/*,image/jpeg">
+                <input id="form-submit" type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="./styles/index.js"></script> -->
+</body>
+</html>
